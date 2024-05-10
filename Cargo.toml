@@ -1,0 +1,14 @@
+[package]
+name = "fxn_code"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0", features = ["html_reports"] }
+rayon = "1"
+
+[[bench]]
+name = "distance_bench"
+harness = false
